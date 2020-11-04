@@ -1,9 +1,18 @@
-const nome = document.getElementById('nome');
-const altura = document.getElementById('altura');
-const peso = document.getElementById('peso');
-const calcular = document.getElementById('calcular');
-const resultado = document.getElementById('resultado');
 
-alert(nome);
-alert(altura);
-alert(altura);
+const calcular = document.getElementById('calcular');
+
+
+
+function imc () {
+  const nome = document.getElementById('nome').value;
+  const altura = document.getElementById('altura').value;
+  const peso = document.getElementById('peso').value;
+  const resultado = document.getElementById('resultado');
+
+  if(nome !== '' && altura !== '' && peso !== '') {
+      alert ('Preencha todos os campos')
+  }else 
+
+}
+
+calcular.addEventListener('click', imc);
